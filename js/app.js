@@ -52,7 +52,7 @@ app.controller('menuCtrl', function ($scope, $location, menuSrv, $http) {
     $scope.getCharge = function() {
         //There's no support of legacy web servers here because of Node.js
         $http({
-            url: $scope.url,
+            url: 'http://YOUR_URL.com', //#TODO MM - just replace this url
             method: "POST",
             data: { 'order' : $scope.orderLst }
         }).success(function(){
