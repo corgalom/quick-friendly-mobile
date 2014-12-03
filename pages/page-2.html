@@ -1,0 +1,9 @@
+<h2>Select what {{customer}} has ordered</h2>
+<ul>
+    <li ng-repeat="prod in prods"><img ng-src="img/{{prod.name}}.jpg" class="{{getStyle(prod)}}" ng-click="orderProd(prod)"/><br/>{{prod.name}}, ${{prod.price}}</li>
+</ul>
+<input type="text" placeholder="Enter url to post" ng-model="url"><br/>
+<button class="btn btn-lg btn-success" ng-click="getCharge()">Charge tab</button>
+
+
+<div class="well">Order: {{orderLst}}</div>
